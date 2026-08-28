@@ -1,100 +1,66 @@
-```html
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Tú y Yo</title>   
 </head>
+<body class="inter_396b12ce-module__rRjk0G__className">
 
-<body>
+    <template id="B:0"></template>
 
-    <div id="spider-container">
-        <div id="web"></div>
-        <div id="spider">🕷️</div>
+
+    <div hidden id="S:0">
+        <template id="B:1"></template>
+        <div class="min-h-screen">
+            <main class="pt-24 pb-16">
+                <div class="max-w-7xl mx-auto px-4 space-y-16 animate-pulse">
+                    <div class="flex items-center space-x-2 text-sm">
+                        <div class="h-4 w-12 bg-muted rounded"></div><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right w-4 h-4 text-muted-foreground" aria-hidden="true">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                        <div class="h-4 w-24 bg-muted rounded"></div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <div class="lg:col-span-2 space-y-6">
+                            <div class="h-12 w-3/4 bg-muted rounded-lg"></div>
+                            <div class="space-y-2">
+                                <div class="h-5 w-full bg-muted rounded"></div>
+                                <div class="h-5 w-full bg-muted rounded"></div>
+                                <div class="h-5 w-5/6 bg-muted rounded"></div>
+                            </div>
+                            <div class="w-full h-96 bg-muted rounded-xl"></div>
+                        </div>
+                        <div class="lg:col-span-1">
+                            <div class="sticky top-24 bg-card border rounded-xl p-6 space-y-6">
+                                <div class="h-8 w-1/2 bg-muted rounded"></div>
+                                <div class="h-12 w-full bg-muted rounded-lg"></div>
+                                <div class="h-12 w-full bg-muted rounded-lg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
     </div>
 
-    <header>
-        <div class="logo">Mi Portafolio</div>
+    <script>$RB = []; $RV = function (a) { $RT = performance.now(); for (var b = 0; b < a.length; b += 2) { var c = a[b], e = a[b + 1]; null !== e.parentNode && e.parentNode.removeChild(e); var f = c.parentNode; if (f) { var g = c.previousSibling, h = 0; do { if (c && 8 === c.nodeType) { var d = c.data; if ("/$" === d || "/&" === d) if (0 === h) break; else h--; else "$" !== d && "$?" !== d && "$~" !== d && "$!" !== d && "&" !== d || h++ } d = c.nextSibling; f.removeChild(c); c = d } while (c); for (; e.firstChild;)f.insertBefore(e.firstChild, c); g.data = "$"; g._reactRetry && requestAnimationFrame(g._reactRetry) } } a.length = 0 };
+        $RC = function (a, b) { if (b = document.getElementById(b)) (a = document.getElementById(a)) ? (a.previousSibling.data = "$~", $RB.push(a, b), 2 === $RB.length && ("number" !== typeof $RT ? requestAnimationFrame($RV.bind(null, $RB)) : (a = performance.now(), setTimeout($RV.bind(null, $RB), 2300 > a && 2E3 < a ? 2300 - a : $RT + 300 - a)))) : b.parentNode.removeChild(b) }; $RC("B:0", "S:0")</script>
+    <div hidden id="S:1"><template id="P:2"></template></div>
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="inicio" class="hero">
-        <h1>Hola, soy Tu Nombre</h1>
-        <p>Desarrollador Web | Diseñador | Estudiante</p>
-        <a href="#proyectos" class="btn">Ver Proyectos</a>
-    </section>
-
-    <section id="sobre">
-        <h2>Sobre Mí</h2>
-
-        <p>
-            Aquí puedes escribir información sobre ti,
-            tus estudios, experiencia, intereses y metas.
-        </p>
-    </section>
-
-    <section id="proyectos">
-        <h2>Mis Proyectos</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Proyecto 1</h3>
-                <p>Descripción de tu proyecto.</p>
-            </div>
-
-            <div class="card">
-                <h3>Proyecto 2</h3>
-                <p>Descripción de tu proyecto.</p>
-            </div>
-
-            <div class="card">
-                <h3>Proyecto 3</h3>
-                <p>Descripción de tu proyecto.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-
-        <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">Git</div>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-
-        <p>Email: correo@ejemplo.com</p>
-        <p>Teléfono: +00 000 000 000</p>
-        <p>LinkedIn: linkedin.com/in/tuperfil</p>
-    </section>
-
-    <footer>
-        © 2026 - Tu Nombre
-    </footer>
-
-    <script src="script.js"></script>
+    <div hidden id="S:2"><iframe
+            srcDoc="&lt;!DOCTYPE html&gt;&lt;html lang=es&gt;&lt;head&gt;&lt;meta name=robots content=&quot;noindex, nofollow&quot;&gt;&lt;meta charset=UTF-8&gt;&lt;meta name=viewport content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;title&gt;El Abrazo CÃ³smico&lt;/title&gt;&lt;style&gt;body{margin:0;padding:0;overflow:hidden;background-color:#000;font-family:&#x27;Segoe UI&#x27;,Tahoma,Geneva,Verdana,sans-serif;color:#fff;user-select:none}#canvas-container{width:100vw;height:100vh;display:block}.overlay{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;display:flex;flex-direction:column;justify-content:flex-end;padding:40px;box-sizing:border-box}.instructions{text-align:center;font-size:.9rem;opacity:.7;letter-spacing:1px;margin-bottom:20px;animation:fadeIn 3s ease-in-out}@keyframes fadeIn{from{opacity:0;transform:translateY(-20px)}to{opacity:.7;transform:translateY(0)}}#loader{position:fixed;top:0;left:0;width:100vw;height:100vh;background-color:#030308;color:rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;font-size:1.1rem;letter-spacing:2px;z-index:9999;transition:opacity .5s ease}&lt;/style&gt;&lt;meta name=tlanex-slug content=cosmic-heart-fusion-3d&gt;&lt;meta name=tlanex-api-base content=https://tlanex-backend.vercel.app&gt;&lt;style&gt;body{-webkit-user-select:none;-ms-user-select:none;user-select:none}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=loader&gt;Cargando el universo...&lt;/div&gt;&lt;div id=canvas-container&gt;&lt;/div&gt;&lt;div class=overlay&gt;&lt;div class=instructions id=instructions&gt;&lt;/div&gt;&lt;/div&gt;&lt;script src=https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js&gt;&lt;/script&gt;&lt;script src=https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js&gt;&lt;/script&gt;&lt;script&gt;const _0x160d91=_0x7a70;function _0x4927(){const t=[&quot;title&quot;,&quot;width&quot;,&quot;#ccffff&quot;,&quot;none&quot;,&quot;style&quot;,&quot;getContext&quot;,&quot;rial&quot;,&quot;ols&quot;,&quot;stener&quot;,&quot; Verdana, &quot;,&quot;instructio&quot;,&quot;,0)&quot;,&quot;Power&quot;,&quot;__proto__&quot;,&quot;eCamera&quot;,&quot;#ffe6cc&quot;,&#x27;ctor(&quot;retu&#x27;,&quot;max&quot;,&#x27;rn this&quot;)(&#x27;,&quot;setAttribu&quot;,&quot;measureTex&quot;,&quot;cos&quot;,&quot;exception&quot;,&quot;55,255,0.2&quot;,&quot;height&quot;,&quot;material&quot;,&quot;#33ccff&quot;,&quot;rgba(255,2&quot;,&quot;updateProj&quot;,&quot;minDistanc&quot;,&quot;nText&quot;,&quot;Sprite&quot;,&quot;rgba(0,0,0&quot;,&quot;render&quot;,&quot;rer&quot;,&quot;Scene&quot;,&quot;FogExp2&quot;,&quot;set&quot;,&quot;rotation&quot;,&quot;ending&quot;,&quot;leftGalaxy&quot;,&quot;length&quot;,&quot;6579324JSweJh&quot;,&quot;center&quot;,&quot;sin&quot;,&quot;getElement&quot;,&quot;119053aTourC&quot;,&quot;rightColor&quot;,&quot;appendChil&quot;,&quot;toString&quot;,&quot;etry&quot;,&quot;textAlign&quot;,&quot;radius&quot;,&quot;addEventLi&quot;,&quot;toUpperCas&quot;,&quot;min&quot;,&quot;ibute&quot;,&#x27;px &quot;Segoe &#x27;,&quot;canvas-con&quot;,&quot;font&quot;,&quot;maxDistanc&quot;,&quot;push&quot;,&quot;branches&quot;,&quot;fog&quot;,&quot;createElem&quot;,&quot;30aolkuF&quot;,&quot;setSize&quot;,&quot;Points&quot;,&quot;innerWidth&quot;,&quot;setPixelRa&quot;,&quot;yText&quot;,&quot;pageTitle&quot;,&quot;2995260BWaeDz&quot;,&quot;OrbitContr&quot;,&quot;lerp&quot;,&quot;#ffffff&quot;,&quot;Perspectiv&quot;,&quot;pow&quot;,&quot;5205933cmEZcx&quot;,&quot;lor&quot;,&quot;table&quot;,&quot;add&quot;,&quot;830965zZigsS&quot;,&quot;nction() &quot;,&quot;getImageDa&quot;,&quot;WebGLRende&quot;,&quot;ent&quot;,&quot;devicePixe&quot;,&quot;addColorSt&quot;,&quot;ById&quot;,&quot;innerHeigh&quot;,&quot;#000000&quot;,&quot;fillText&quot;,&quot;random&quot;,&quot;CanvasText&quot;,&quot;textConten&quot;,&quot;onload&quot;,&quot;Text&quot;,&quot;BufferGeom&quot;,&quot;randomness&quot;,&quot;acos&quot;,&quot;padStart&quot;,&quot;Time&quot;,&quot;leftColor&quot;,&quot;#ff3366&quot;,&quot;a, Geneva,&quot;,&quot;trace&quot;,&quot;ferAttribu&quot;,&quot;spin&quot;,&quot;data&quot;,&quot;setClearCo&quot;,&quot;ure&quot;,&quot;info&quot;,&quot;console&quot;,&quot;Color&quot;,&quot;AdditiveBl&quot;,&quot;bold &quot;,&quot;resize&quot;,&quot;getElapsed&quot;,&quot;color&quot;,&quot;alGradient&quot;,&quot;fillRect&quot;,&quot;16lHhUfv&quot;,&quot;tainer&quot;,&quot;opacity&quot;,&quot;constructo&quot;,&quot;domElement&quot;,&quot;8vRcmDp&quot;,&quot;textBaseli&quot;,&quot;6746453gkiTdK&quot;,&quot;BufferAttr&quot;,&quot;position&quot;,&quot;canvas&quot;,&quot;sans-serif&quot;,&quot;update&quot;,&quot;PointsMate&quot;,&quot;fillStyle&quot;,&quot;SpriteMate&quot;,&quot;warn&quot;,&quot;return (fu&quot;,&quot;tor&quot;,&quot;Float32Buf&quot;,&quot;230710orgUId&quot;,&quot;rightGalax&quot;,&quot;loader&quot;,&quot;clone&quot;,&quot;tio&quot;,&#x27;UI&quot;, Tahom&#x27;,&quot;scale&quot;,&quot;#030308&quot;,&quot;lRatio&quot;,&quot;ectionMatr&quot;,&quot;aspect&quot;,&quot;slice&quot;,&quot;error&quot;,&quot;{}.constru&quot;,&quot;apply&quot;,&quot;9BxFMOV&quot;];return(_0x4927=function(){return t})()}!function(){const t=_0x7a70,e=_0x4927();for(;;)try{if(939196===parseInt(t(505))/1*(-parseInt(t(490))/2)+parseInt(t(420))/3+-parseInt(t(470))/4*(-parseInt(t(430))/5)+parseInt(t(390))/6+-parseInt(t(477))/7*(-parseInt(t(475))/8)+-parseInt(t(426))/9*(parseInt(t(413))/10)+-parseInt(t(394))/11)break;e.push(e.shift())}catch(t){e.push(e.shift())}}();const _0x412aea=function(){let t=!0;return function(e,a){const n=t?function(){if(a){const t=a[_0x7a70(504)](e,arguments);return a=null,t}}:function(){};return t=!1,n}}(),_0x425fbd=_0x412aea(this,function(){const t=_0x7a70;let e;try{e=Function(t(487)+t(431)+(t(503)+t(522)+t(524)+&quot; ));&quot;))()}catch(t){e=window}const a=e[t(461)]=e[t(461)]||{},n=[&quot;log&quot;,t(486),t(460),t(502),t(370),t(428),t(454)];for(let e=0;e&lt;n[t(389)];e++){const r=_0x412aea[t(473)+&quot;r&quot;].prototype.bind(_0x412aea),o=n[e],c=a[o]||r;r[t(519)]=_0x412aea.bind(_0x412aea),r[t(397)]=c[t(397)].bind(c),a[o]=r}});_0x425fbd();let colorLeftSecondary,colorRightSecondary,scene,camera,renderer,controls,galaxyTu,galaxyYo,heartCore,backgroundStars,textTu,textYo,coreGlow,textTuUpper=&quot;TÚ&quot;,textYoUpper=&quot;YO&quot;,colorLeftPrimary=_0x160d91(452),colorRightPrimary=_0x160d91(374),dataReady=!1,windowReady=!1,sceneStarted=!1;function _0x7a70(t,e){const a=_0x4927();return _0x7a70=function(t,e){return a[t-=367]},_0x7a70(t,e)}function tlanexHydrate(t){const e=_0x160d91;if(t[e(419)]&amp;&amp;(document[e(506)]=t.pageTitle),t[e(516)+e(378)]){const a=document[e(393)+&quot;ById&quot;](&quot;instructions&quot;);a&amp;&amp;(a[e(443)+&quot;t&quot;]=t[e(516)+e(378)])}t[&quot;leftGalaxy&quot;+e(445)]&amp;&amp;(textTuUpper=t[e(388)+e(445)][e(402)+&quot;e&quot;]()),t[e(491)+e(418)]&amp;&amp;(textYoUpper=t[&quot;rightGalax&quot;+e(418)][e(402)+&quot;e&quot;]()),t[e(451)]&amp;&amp;(colorLeftPrimary=t.leftColor),t[e(395)]&amp;&amp;(colorRightPrimary=t[e(395)]),dataReady=!0,checkAndStart()}function checkAndStart(){const t=_0x160d91;if(dataReady&amp;&amp;windowReady&amp;&amp;!sceneStarted){sceneStarted=!0,colorLeftSecondary=getSecondaryColor(colorLeftPrimary),colorRightSecondary=getSecondaryColor(colorRightPrimary);const e=document[t(393)+&quot;ById&quot;](t(492));e&amp;&amp;(e.style[t(472)]=&quot;0&quot;,setTimeout(()=&gt;e[t(510)].display=t(509),500)),init(),animate()}}function getSecondaryColor(t){const e=_0x160d91;if(!t)return e(439);let a=!1;&quot;#&quot;==t[0]&amp;&amp;(t=t[e(501)](1),a=!0);let n=parseInt(t,16),r=(n&gt;&gt;16)-100;r=r&gt;255?255:r&lt;0?0:r;let o=(n&gt;&gt;8&amp;255)-100;o=o&gt;255?255:o&lt;0?0:o;let c=(255&amp;n)-100;return c=c&gt;255?255:c&lt;0?0:c,(a?&quot;#&quot;:&quot;&quot;)+(c|o&lt;&lt;8|r&lt;&lt;16)[e(397)](16)[e(449)](6,&quot;0&quot;)}window[_0x160d91(444)]=function(){windowReady=!0,checkAndStart(),setTimeout(()=&gt;{!sceneStarted&amp;&amp;(dataReady=!0,checkAndStart())},3e3)};const clock=new THREE.Clock,params={count:25e3,radius:7,branches:3,spin:1.2,randomness:.4,randomnessPower:3};function init(){const t=_0x160d91,e=document[t(393)+t(437)](t(406)+t(471));scene=new(THREE[t(383)]),scene[t(411)]=new(THREE[t(384)])(0,.012),camera=new(THREE[t(424)+t(520)])(60,window[t(416)]/window[t(438)+&quot;t&quot;],.1,100);const a=window.innerWidth&lt;768?24:14;camera[t(479)].set(0,5,a),renderer=new(THREE[t(433)+t(382)])({antialias:!0,alpha:!0}),renderer[t(414)](window[t(416)],window[t(438)+&quot;t&quot;]),renderer[t(417)+t(494)](Math[t(403)](window[t(435)+t(498)],2)),renderer[t(458)+t(427)](new THREE.Color(t(497)),1),e[t(396)+&quot;d&quot;](renderer[t(474)]),controls=new(THREE[t(421)+t(513)])(camera,renderer.domElement),controls.enableDamping=!0,controls[&quot;dampingFac&quot;+t(488)]=.05,controls[t(408)+&quot;e&quot;]=35,controls[t(377)+&quot;e&quot;]=8,controls.enablePan=!1;const n=createParticleTexture();galaxyTu=createGalaxy(-3.5,0,0,colorLeftPrimary,colorLeftSecondary,1,n),galaxyYo=createGalaxy(3.5,0,0,colorRightPrimary,colorRightSecondary,-1,n),scene.add(galaxyTu),scene[t(429)](galaxyYo),textTu=createTextParticles(textTuUpper,colorLeftPrimary,n),textTu[t(479)][t(385)](-3.5,1.2,0),scene[t(429)](textTu),textYo=createTextParticles(textYoUpper,colorRightPrimary,n),textYo.position.set(3.5,1.2,0),scene[t(429)](textYo),heartCore=createHeart(n),scene.add(heartCore);const r=new(THREE[t(485)+t(512)])({map:n,color:16777215,transparent:!0,blending:THREE.AdditiveBlending,opacity:.8});coreGlow=new(THREE[t(379)])(r),coreGlow[t(496)][t(385)](6,6,1),scene[t(429)](coreGlow),createBackgroundStars(n),window[t(401)+t(514)](t(465),onWindowResize,!1)}function createParticleTexture(){const t=_0x160d91,e=document[&quot;createElem&quot;+t(434)](t(480));e.width=32,e.height=32;const a=e[t(511)](&quot;2d&quot;),n=a[&quot;createRadi&quot;+t(468)](16,16,0,16,16,16);return n[t(436)+&quot;op&quot;](0,&quot;rgba(255,255,255,1)&quot;),n[t(436)+&quot;op&quot;](.2,t(375)+&quot;55,255,0.8)&quot;),n[t(436)+&quot;op&quot;](.5,t(375)+t(371)+&quot;)&quot;),n[t(436)+&quot;op&quot;](1,t(380)+t(517)),a[t(484)]=n,a[t(469)](0,0,32,32),new(THREE[t(442)+t(459)])(e)}function createTextParticles(t,e,a){const n=_0x160d91,r=document[n(412)+n(434)](n(480)),o=r[n(511)](&quot;2d&quot;);o[n(407)]=n(464)+80+(n(405)+n(495)+n(453)+n(515)+&quot;sans-serif&quot;);const c=o[n(368)+&quot;t&quot;](t).width;r.width=Math[n(523)](256,c+40),r[n(372)]=128,o[n(407)]=n(464)+80+&#x27;px &quot;Segoe &#x27;+n(495)+n(453)+&quot; Verdana, &quot;+n(481),o[n(399)]=n(391),o[n(476)+&quot;ne&quot;]=&quot;middle&quot;,o[n(484)]=n(439),o[n(469)](0,0,r[n(507)],r.height),o[n(484)]=n(423),o[n(440)](t,r[n(507)]/2,r[n(372)]/2);const i=o[n(432)+&quot;ta&quot;](0,0,r.width,r[n(372)])[n(457)],s=[],d=[],l=new(THREE[n(462)])(e);for(let t=0;t&lt;r[n(372)];t+=1)for(let e=0;e&lt;r.width;e+=1){if(i[4*(t*r[n(507)]+e)]&gt;128&amp;&amp;Math[n(441)]()&gt;.4){const a=Math.floor(2*Math[n(441)]())+1;for(let o=0;o&lt;a;o++){const a=.3*(Math[n(441)]()-.5),o=.3*(Math.random()-.5),c=.8*(Math.random()-.5),i=.05*(e-r[n(507)]/2)+a,h=.05*-(t-r[n(372)]/2)+o,u=c;s.push(i,h,u);const x=l[n(493)]();Math[n(441)]()&gt;.7&amp;&amp;x[n(422)](new(THREE[n(462)])(16777215),.8*Math.random()),d[n(409)](x.r,x.g,x.b)}}}const h=new(THREE[n(446)+n(398)]);h[n(367)+&quot;te&quot;](n(479),new THREE.Float32BufferAttribute(s,3)),h[n(367)+&quot;te&quot;](n(467),new(THREE[n(489)+n(455)+&quot;te&quot;])(d,3));const u=.05*c,x=Math[n(403)](1,5/u),p=new(THREE[n(483)+n(512)])({size:Math[n(523)](.06,.12*x),sizeAttenuation:!0,depthWrite:!1,blending:THREE[n(463)+&quot;ending&quot;],vertexColors:!0,transparent:!0,opacity:.9,map:a}),w=new(THREE[n(415)])(h,p);return w[n(496)].set(x,x,x),w}function createGalaxy(t,e,a,n,r,o,c){const i=_0x160d91,s=new(THREE[i(446)+i(398)]),d=new Float32Array(3*params.count),l=new Float32Array(3*params.count),h=new(THREE[i(462)])(n),u=new(THREE[i(462)])(r);for(let n=0;n&lt;params.count;n++){const r=3*n,c=Math.random()*params.radius,s=c*params[i(456)]*o,x=n%params.branches*(2*Math.PI/params[i(410)]),p=Math.pow(Math.random(),params[i(447)+i(518)])*(Math[i(441)]()&lt;.5?1:-1)*params.randomness*c,w=Math[i(425)](Math[i(441)](),params[i(447)+i(518)])*(Math[i(441)]()&lt;.5?1:-1)*params[i(447)]*c,E=Math[i(425)](Math[i(441)](),params[i(447)+i(518)])*(Math[i(441)]()&lt;.5?1:-1)*params[i(447)]*c;d[r]=Math[i(369)](x+s)*c+p+t,d[r+1]=w+e,d[r+2]=Math[i(392)](x+s)*c+E+a;const f=h[i(493)]();f[i(422)](u,c/params[i(400)]),l[r]=f.r,l[r+1]=f.g,l[r+2]=f.b}s[i(367)+&quot;te&quot;](i(479),new(THREE[i(478)+&quot;ibute&quot;])(d,3)),s.setAttribute(i(467),new(THREE[i(478)+i(404)])(l,3));const x=new(THREE[i(483)+&quot;rial&quot;])({size:.1,sizeAttenuation:!0,depthWrite:!1,blending:THREE[&quot;AdditiveBl&quot;+i(387)],vertexColors:!0,transparent:!0,opacity:.9,map:c});return new(THREE[i(415)])(s,x)}function createHeart(t){const e=_0x160d91,a=6e3,n=new(THREE[&quot;BufferGeom&quot;+e(398)]),r=new Float32Array(18e3),o=new Float32Array(18e3),c=new(THREE[e(462)])(e(423)),i=new THREE.Color(e(521)),s=new(THREE[e(462)])(e(508));for(let t=0;t&lt;a;t++){const a=Math[e(441)]()*Math.PI*2,n=Math.sqrt(Math[e(441)]()),d=.08*n,l=16*Math[e(425)](Math[e(392)](a),3),h=13*Math[e(369)](a)-5*Math.cos(2*a)-2*Math.cos(3*a)-Math.cos(4*a),u=2*(Math[e(441)]()-.5)*(1-n),x=3*t;r[x]=l*d,r[x+1]=h*d+.3,r[x+2]=u;let p=c[e(493)]();Math[e(441)]()&gt;.7&amp;&amp;(p=Math.random()&gt;.5?i:s),o[x]=p.r,o[x+1]=p.g,o[x+2]=p.b}n[e(367)+&quot;te&quot;](e(479),new(THREE[e(478)+e(404)])(r,3)),n[e(367)+&quot;te&quot;](e(467),new(THREE[&quot;BufferAttr&quot;+e(404)])(o,3));const d=new(THREE[e(483)+&quot;rial&quot;])({size:.15,sizeAttenuation:!0,depthWrite:!1,blending:THREE[&quot;AdditiveBl&quot;+e(387)],vertexColors:!0,transparent:!0,opacity:1,map:t});return new(THREE[e(415)])(n,d)}function createBackgroundStars(t){const e=_0x160d91,a=new(THREE[e(446)+e(398)]),n=new Float32Array(9e3),r=new Float32Array(9e3);for(let t=0;t&lt;9e3;t+=3){const a=30+50*Math[e(441)](),o=2*Math.PI*Math[e(441)](),c=Math[e(448)](2*Math.random()-1);n[t]=a*Math[e(392)](c)*Math[e(369)](o),n[t+1]=a*Math[e(392)](c)*Math.sin(o),n[t+2]=a*Math[e(369)](c),r[t]=.8+.2*Math[e(441)](),r[t+1]=.8+.2*Math[e(441)](),r[t+2]=.9+.1*Math[e(441)]()}a[e(367)+&quot;te&quot;](e(479),new(THREE[e(478)+e(404)])(n,3)),a[e(367)+&quot;te&quot;](e(467),new(THREE[e(478)+e(404)])(r,3));const o=new(THREE[e(483)+&quot;rial&quot;])({size:.25,map:t,transparent:!0,blending:THREE[&quot;AdditiveBl&quot;+e(387)],vertexColors:!0,depthWrite:!1,opacity:.9});backgroundStars=new(THREE[e(415)])(a,o),scene[e(429)](backgroundStars)}function onWindowResize(){const t=_0x160d91;camera[t(500)]=window[t(416)]/window[t(438)+&quot;t&quot;],camera[t(376)+t(499)+&quot;ix&quot;](),renderer[t(414)](window[t(416)],window.innerHeight)}function animate(){const t=_0x160d91;requestAnimationFrame(animate);const e=clock[t(466)+t(450)]();if(galaxyTu&amp;&amp;galaxyYo&amp;&amp;(galaxyTu[t(386)].y=.05*e,galaxyTu[t(386)].z=.1*Math.sin(.1*e),galaxyYo[t(386)].y=.05*e,galaxyYo[t(386)].z=.1*Math[t(369)](.1*e)),textTu&amp;&amp;textYo&amp;&amp;(textTu[t(479)].y=1.2+.1*Math[t(392)](1.5*e),textYo.position.y=1.2+.1*Math.cos(1.5*e),textTu.rotation.y=.1*Math[t(392)](.5*e),textYo[t(386)].y=.1*Math[t(392)](.5*e)),heartCore&amp;&amp;coreGlow){const a=1+.2*Math[t(425)](Math[t(392)](2.5*e),6);heartCore[t(496)][t(385)](a,a,a),heartCore[t(386)].y=.2*e,coreGlow[t(496)].set(6*a,6*a,1),coreGlow[t(373)][t(472)]=.6+.4*Math[t(425)](Math[t(392)](2.5*e),6)}backgroundStars&amp;&amp;(backgroundStars[t(386)].y=.01*e,backgroundStars.rotation.x=.005*e),controls[t(482)](),renderer[t(381)](scene,camera)}&lt;/script&gt;"
+            style="position:fixed;top:0;left:0;width:100vw;height:100vh;border:none"
+            title="PrevisualizaciÃ³n de cosmic-heart-fusion-3d" sandbox="allow-scripts allow-same-origin"
+            allow="accelerometer; gyroscope; magnetometer"></iframe></div>
+    <script>$RS = function (a, b) { a = document.getElementById(a); b = document.getElementById(b); for (a.parentNode.removeChild(a); a.firstChild;)b.parentNode.insertBefore(a.firstChild, b); b.parentNode.removeChild(b) }; $RS("S:2", "P:2")</script>
+    <script>$RC("B:1", "S:1")</script>
 
 </body>
+
 </html>
-```
