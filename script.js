@@ -17,7 +17,7 @@ enlaces.forEach(enlace => {
         // Crear el gatito
         const gato = document.createElement("div");
 
-        gato.textContent = "👻";
+        gato.textContent = "😮";
 
         gato.style.position = "fixed";
         gato.style.left = "50%";
