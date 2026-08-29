@@ -1,52 +1,368 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+html {
+    scroll-behavior: smooth;
 }
 
-header {
-    background: #222;
-    color: white;
-    padding: 15px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    padding: 20px 8%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: #0f0f0f;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    border-bottom: 1px solid #222;
 }
 
-nav a {
-    color: white;
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #ffffff;
     text-decoration: none;
-    margin-left: 15px;
+    font-size: 15px;
+
+    transition: 0.3s;
 }
 
-.hero {
+.nav a:hover {
+    color: #8b5cf6;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 10%;
+
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.inicio-contenido {
+    max-width: 800px;
+}
+
+.saludo {
+    color: #8b5cf6;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inicio h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.inicio h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    color: #bdbdbd;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #8b5cf6;
     color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
 }
 
-section {
-    padding: 50px 20px;
+.boton:hover {
+    transform: translateY(-3px);
+    background-color: #7042d6;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    padding: 100px 10%;
 }
 
-ul {
-    list-style: none;
+.titulo {
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 50px;
 }
 
-li {
+.titulo::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background-color: #8b5cf6;
+
+    margin: 15px auto;
+}
+
+
+/* =========================
+   SOBRE MÍ
+========================= */
+
+.sobre-mi {
+    max-width: 800px;
+    margin: auto;
+}
+
+.sobre-mi-texto p {
+    color: #c7c7c7;
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   HABILIDADES
+========================= */
+
+.habilidades-seccion {
+    background-color: #141414;
+}
+
+.habilidades {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.habilidad {
+    padding: 30px;
+
+    background-color: #1c1c1c;
+
+    border: 1px solid #292929;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.habilidad:hover {
+    transform: translateY(-5px);
+
+    border-color: #8b5cf6;
+}
+
+.habilidad h3 {
+    color: #8b5cf6;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.habilidad p {
+    color: #bdbdbd;
+}
+
+
+/* =========================
+   PROYECTOS
+========================= */
+
+.proyectos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.proyecto {
+    background-color: #181818;
+
+    border: 1px solid #292929;
+
+    border-radius: 12px;
+
+    padding: 35px;
+
+    transition: 0.3s;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+
+    border-color: #8b5cf6;
+}
+
+.numero {
+    color: #8b5cf6;
+
+    font-size: 14px;
+}
+
+.proyecto h3 {
+    font-size: 28px;
+
     margin: 10px 0;
+}
+
+.tecnologias {
+    color: #8b5cf6;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.proyecto p {
+    color: #bdbdbd;
+
+    margin-bottom: 20px;
+}
+
+.proyecto-boton {
+    color: white;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #8b5cf6;
+
+    padding-bottom: 3px;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    text-align: center;
+
+    background-color: #141414;
+}
+
+.contacto p {
+    color: #bdbdbd;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #777;
+
+    background-color: #0a0a0a;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .inicio h1 {
+        font-size: 55px;
+    }
+
+    .inicio h2 {
+        font-size: 24px;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion {
+        padding: 70px 7%;
+    }
 }

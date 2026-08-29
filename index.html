@@ -3,54 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+
+    <title>Junior | Portafolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Tu Nombre</h1>
-        <nav>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="logo">
+            Junior
+        </div>
+
+        <nav class="nav">
             <a href="#inicio">Inicio</a>
-            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre mí</a>
             <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
         </nav>
+
     </header>
 
-    <section id="inicio" class="hero">
-        <h2>Desarrollador Web</h2>
-        <p>Bienvenido a mi portafolio profesional.</p>
-    </section>
 
-    <section id="proyectos">
-        <h2>Mis Proyectos</h2>
+    <!-- ================= INICIO ================= -->
+    <section id="inicio" class="inicio">
 
-        <div class="card">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto.</p>
+        <div class="inicio-contenido">
+
+            <p class="saludo">Hola, soy</p>
+
+            <h1>Junior</h1>
+
+            <h2>Desarrollador de Software en Formación</h2>
+
+            <p>
+                Estudiante de Diseño y Desarrollo de Software en Certus,
+                apasionado por la tecnología y la creación de proyectos digitales.
+            </p>
+
+            <a href="#proyectos" class="boton">
+                Ver mis proyectos
+            </a>
+
         </div>
 
-        <div class="card">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto.</p>
+    </section>
+
+
+    <!-- ================= SOBRE MÍ ================= -->
+    <section id="sobre-mi" class="seccion">
+
+        <h2 class="titulo">Sobre mí</h2>
+
+        <div class="sobre-mi">
+
+            <div class="sobre-mi-texto">
+
+                <p>
+                    Hola, soy Junior, estudiante de la carrera de
+                    Diseño y Desarrollo de Software en Certus,
+                    actualmente cursando el segundo ciclo.
+                </p>
+
+                <p>
+                    Me interesa el desarrollo de software y el aprendizaje
+                    continuo de nuevas tecnologías para crear soluciones
+                    digitales funcionales y atractivas.
+                </p>
+
+                <p>
+                    He participado en proyectos académicos y colaborativos
+                    que me han permitido desarrollar mis conocimientos
+                    técnicos y aprender sobre el trabajo en equipo.
+                </p>
+
+            </div>
+
         </div>
+
     </section>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section id="habilidades" class="seccion habilidades-seccion">
+
+        <h2 class="titulo">Mis habilidades</h2>
+
+        <div class="habilidades">
+
+            <div class="habilidad">
+                <h3>HTML</h3>
+                <p>Estructura y creación de páginas web.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>CSS</h3>
+                <p>Diseño, estilos y adaptación de páginas web.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>JavaScript</h3>
+                <p>Conocimientos básicos de programación web.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Python</h3>
+                <p>Conocimientos básicos de programación.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Git</h3>
+                <p>Control de versiones para proyectos.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>GitHub</h3>
+                <p>Gestión y almacenamiento de proyectos.</p>
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: correo@ejemplo.com</p>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section id="proyectos" class="seccion">
+
+        <h2 class="titulo">Mis proyectos</h2>
+
+        <div class="proyectos">
+
+            <!-- Proyecto 1 -->
+            <article class="proyecto">
+
+                <div class="proyecto-contenido">
+
+                    <span class="numero">01</span>
+
+                    <h3>Run Fish Run</h3>
+
+                    <p class="tecnologias">
+                        Godot Engine · GDScript
+                    </p>
+
+                    <p>
+                        Videojuego desarrollado en equipo utilizando
+                        Godot Engine y GDScript. Durante el proyecto
+                        trabajamos en diferentes aspectos relacionados
+                        con la programación y desarrollo de videojuegos.
+                    </p>
+
+                    <a href="#" class="proyecto-boton">
+                        Ver proyecto
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Proyecto 2 -->
+            <article class="proyecto">
+
+                <div class="proyecto-contenido">
+
+                    <span class="numero">02</span>
+
+                    <h3>Sweet Cakes</h3>
+
+                    <p class="tecnologias">
+                        HTML · CSS · JavaScript
+                    </p>
+
+                    <p>
+                        Página web desarrollada en equipo para la venta
+                        de postres dulces y salados. El proyecto busca
+                        presentar los productos de una manera atractiva
+                        y sencilla para los usuarios.
+                    </p>
+
+                    <a href="#" class="proyecto-boton">
+                        Ver proyecto
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Proyecto 3 -->
+            <article class="proyecto">
+
+                <div class="proyecto-contenido">
+
+                    <span class="numero">03</span>
+
+                    <h3>Próximamente</h3>
+
+                    <p class="tecnologias">
+                        Por definir
+                    </p>
+
+                    <p>
+                        Espacio reservado para uno de mis próximos
+                        proyectos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Proyecto 4 -->
+            <article class="proyecto">
+
+                <div class="proyecto-contenido">
+
+                    <span class="numero">04</span>
+
+                    <h3>Próximamente</h3>
+
+                    <p class="tecnologias">
+                        Por definir
+                    </p>
+
+                    <p>
+                        Espacio reservado para uno de mis próximos
+                        proyectos.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
     </section>
 
-    <script src="script.js"></script>
+
+    <!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="seccion contacto">
+
+        <h2 class="titulo">Contacto</h2>
+
+        <p>
+            ¿Quieres conocer más sobre mis proyectos?
+        </p>
+
+        <a href="mailto:tu-correo@gmail.com" class="boton">
+            Contáctame
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Junior. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
 </body>
 </html>
+
